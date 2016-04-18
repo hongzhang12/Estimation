@@ -1,0 +1,6 @@
+pod 'MBProgressHUD'
+pod 'SDWebImage'
+pod 'FLKAutoLayout'
+pod 'Mantle'
+pod 'MJRefresh'
+pod 'AMap2DMap'
