@@ -9,10 +9,13 @@
 #import "MapCtrl.h"
 #import <AMap2DMap/MAMapKit/MAMapKit.h>
 #import "MapAnnotationView.h"
+#import "DetailCtrl.h"
 
 @interface MapCtrl ()<MAMapViewDelegate>
 
 @property (nonatomic ,weak) MAMapView *mapView;
+
+@property (nonatomic ,weak) MapAnnotationView *selectAnnoatationView;
 
 @end
 
@@ -32,9 +35,6 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = RandomColor;
     //159a71e2891356a60cec359c9f5aa996
-}
-
-- (void)viewDidAppear:(BOOL)animated{
     
     [self getMapData];
 }
@@ -54,15 +54,22 @@
 
 - (void)getMapData{
     
-    MAPointAnnotation *annotation = [[MAPointAnnotation alloc] init];
-    annotation.coordinate = CLLocationCoordinate2DMake(39.54 ,116.23);
-//    annotation.title = @"annotation.title";
-//    annotation.subtitle = @"annotation.subtitle";
-    
-    MAPointAnnotation *annotation1 = [[MAPointAnnotation alloc] init];
-    annotation1.coordinate = CLLocationCoordinate2DMake(39.34 ,116.69);
-    
-    [self.mapView addAnnotations:@[annotation ,annotation1]];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        MAPointAnnotation *annotation = [[MAPointAnnotation alloc] init];
+        annotation.coordinate = CLLocationCoordinate2DMake(39.54 ,116.23);
+        //    annotation.title = @"annotation.title";
+        //    annotation.subtitle = @"annotation.subtitle";
+        
+        MAPointAnnotation *annotation1 = [[MAPointAnnotation alloc] init];
+        annotation1.coordinate = CLLocationCoordinate2DMake(39.34 ,116.69);
+        
+        NSArray *annotationArr = @[annotation ,annotation1];
+        
+        [self.mapView addAnnotations:annotationArr];
+        
+        [self.mapView showAnnotations:annotationArr edgePadding:UIEdgeInsetsMake(200, 200, 200, 200) animated:NO];
+    });
 }
 
 #pragma mark - MAMapViewDelegate
@@ -78,13 +85,23 @@
             
             annotationView  = [[MapAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pointAnnotationID];
             
-            annotationView.animatesDrop = YES;
+            annotationView.calloutViewTapCallBack = ^{
+                
+                [self.navigationController pushViewController:[[DetailCtrl alloc] init] animated:YES];
+            };
             
             return annotationView;
         }
     }
     
     return nil;
+}
+
+- (void)mapView:(MAMapView *)mapView didFailToLocateUserWithError:(NSError *)error{
+    
+    NSLog(@"定位失败--%@",error);
+    
+    [mapView setShowsUserLocation:YES];
 }
 
 @end

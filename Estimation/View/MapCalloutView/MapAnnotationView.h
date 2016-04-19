@@ -9,8 +9,13 @@
 #import <MAMapKit/MAMapKit.h>
 #import "MapInfoView.h"
 
+@class MapAnnotationView;
+typedef void(^CalloutViewTapCallBack)();
+
 @interface MapAnnotationView : MAPinAnnotationView
 
 @property (nonatomic ,weak ,readonly) MapInfoView *calloutView;
+
+@property (nonatomic ,copy) CalloutViewTapCallBack calloutViewTapCallBack;
 
 @end

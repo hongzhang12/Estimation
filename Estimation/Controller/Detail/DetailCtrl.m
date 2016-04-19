@@ -11,6 +11,10 @@
 #import "RoomDetailCell.h"
 #import "UIImage+Addition.h"
 
+#import "DetailEditCtrl.h"
+#import "DetailCreateCtrl.h"
+#import "DetailPresentationController.h"
+
 static CGFloat KRoomTableViewCellPointHeight = 5.0f;
 
 @interface DetailCtrl ()<UITableViewDelegate ,UITableViewDataSource>
@@ -20,6 +24,8 @@ static CGFloat KRoomTableViewCellPointHeight = 5.0f;
 @property (nonatomic ,weak) UITableView *roomTableView;
 
 @property (nonatomic ,weak) UITableView *roomDetailTableView;
+
+@property (nonatomic ,strong) DetailPresentationController *presentationController;
 
 @end
 
@@ -117,6 +123,33 @@ static CGFloat KRoomTableViewCellPointHeight = 5.0f;
         
         return cell;
     }
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (tableView == self.roomDetailTableView) {
+     
+        DetailEditCtrl *editCtrl = [[DetailEditCtrl alloc] init];
+        
+        editCtrl.transitioningDelegate = self.presentationController;
+        editCtrl.modalPresentationStyle = UIModalPresentationCustom;
+        
+        [self presentViewController:editCtrl animated:YES completion:nil];
+    }
+}
+
+#pragma mark - getter and setter
+
+- (UIPresentationController *)presentationController{
+    
+    if (_presentationController == nil) {
+        
+        _presentationController = [[DetailPresentationController alloc] init];
+    }
+    
+    return _presentationController;
 }
 
 - (void)spliteViewCtrlTest{

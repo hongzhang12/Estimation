@@ -10,6 +10,7 @@
 		7EFC4D210A41E332C4AD281D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B952BF1297392A76267C2519 /* libPods.a */; };
 		FC12B89A1CC3BD1600C474F7 /* MapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC12B8991CC3BD1600C474F7 /* MapAnnotationView.m */; };
 		FC3B36281CC4B9450089917F /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3B36271CC4B9450089917F /* UIImage+Addition.m */; };
+		FC5C71FB1CC5E0D100894713 /* DetailPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C71FA1CC5E0D100894713 /* DetailPresentationController.m */; };
 		FC60CDE91CC1D7A600C78A35 /* BaseViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = FC60CDE81CC1D7A600C78A35 /* BaseViewCtrl.m */; };
 		FC6595AD1CC4C2430010BD58 /* RoomDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6595AC1CC4C2430010BD58 /* RoomDetailCell.m */; };
 		FC7C0ADD1CC108470064776A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7C0ADC1CC108470064776A /* main.m */; };
@@ -27,6 +28,9 @@
 		FC7C0B231CC109440064776A /* ListInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7C0B1E1CC109440064776A /* ListInfoView.m */; };
 		FC7C0B241CC109440064776A /* MapInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7C0B201CC109440064776A /* MapInfoView.m */; };
 		FCB6CC581CC13B0400A3D1D3 /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6CC571CC13B0400A3D1D3 /* ListCell.m */; };
+		FCB75CD91CC4DAD6001B3F20 /* DetailEditCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB75CD81CC4DAD6001B3F20 /* DetailEditCtrl.m */; };
+		FCB75CDC1CC4DAF6001B3F20 /* DetailCreateCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB75CDB1CC4DAF6001B3F20 /* DetailCreateCtrl.m */; };
+		FCB75CEA1CC4DD10001B3F20 /* DetailAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB75CE91CC4DD10001B3F20 /* DetailAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,8 @@
 		FC12B8991CC3BD1600C474F7 /* MapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotationView.m; sourceTree = "<group>"; };
 		FC3B36261CC4B9450089917F /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
 		FC3B36271CC4B9450089917F /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
+		FC5C71F91CC5E0D100894713 /* DetailPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPresentationController.h; sourceTree = "<group>"; };
+		FC5C71FA1CC5E0D100894713 /* DetailPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPresentationController.m; sourceTree = "<group>"; };
 		FC60CDE71CC1D7A600C78A35 /* BaseViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewCtrl.h; sourceTree = "<group>"; };
 		FC60CDE81CC1D7A600C78A35 /* BaseViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewCtrl.m; sourceTree = "<group>"; };
 		FC6595AB1CC4C2430010BD58 /* RoomDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomDetailCell.h; sourceTree = "<group>"; };
@@ -82,6 +88,12 @@
 		FC7C0B261CC109AA0064776A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FCB6CC561CC13B0400A3D1D3 /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCell.h; sourceTree = "<group>"; };
 		FCB6CC571CC13B0400A3D1D3 /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCell.m; sourceTree = "<group>"; };
+		FCB75CD71CC4DAD6001B3F20 /* DetailEditCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailEditCtrl.h; sourceTree = "<group>"; };
+		FCB75CD81CC4DAD6001B3F20 /* DetailEditCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailEditCtrl.m; sourceTree = "<group>"; };
+		FCB75CDA1CC4DAF6001B3F20 /* DetailCreateCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCreateCtrl.h; sourceTree = "<group>"; };
+		FCB75CDB1CC4DAF6001B3F20 /* DetailCreateCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCreateCtrl.m; sourceTree = "<group>"; };
+		FCB75CE81CC4DD10001B3F20 /* DetailAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailAnimator.h; sourceTree = "<group>"; };
+		FCB75CE91CC4DD10001B3F20 /* DetailAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +183,7 @@
 		FC7C0AD91CC108470064776A /* Estimation */ = {
 			isa = PBXGroup;
 			children = (
+				FCB75CE11CC4DC26001B3F20 /* Transition:animation */,
 				FC3B36251CC4B9260089917F /* Helper+Category */,
 				FC7C0B251CC1098B0064776A /* Other */,
 				FC7C0B161CC109440064776A /* View */,
@@ -232,6 +245,10 @@
 			children = (
 				FC7C0B071CC108FC0064776A /* DetailCtrl.h */,
 				FC7C0B081CC108FC0064776A /* DetailCtrl.m */,
+				FCB75CD71CC4DAD6001B3F20 /* DetailEditCtrl.h */,
+				FCB75CD81CC4DAD6001B3F20 /* DetailEditCtrl.m */,
+				FCB75CDA1CC4DAF6001B3F20 /* DetailCreateCtrl.h */,
+				FCB75CDB1CC4DAF6001B3F20 /* DetailCreateCtrl.m */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -296,6 +313,17 @@
 			name = Other;
 			sourceTree = "<group>";
 		};
+		FCB75CE11CC4DC26001B3F20 /* Transition:animation */ = {
+			isa = PBXGroup;
+			children = (
+				FCB75CE81CC4DD10001B3F20 /* DetailAnimator.h */,
+				FCB75CE91CC4DD10001B3F20 /* DetailAnimator.m */,
+				FC5C71F91CC5E0D100894713 /* DetailPresentationController.h */,
+				FC5C71FA1CC5E0D100894713 /* DetailPresentationController.m */,
+			);
+			path = "Transition:animation";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -352,6 +380,7 @@
 					};
 					FC7C0AEF1CC108470064776A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 653B63AP98;
 						TestTargetID = FC7C0AD61CC108470064776A;
 					};
 				};
@@ -447,6 +476,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB75CD91CC4DAD6001B3F20 /* DetailEditCtrl.m in Sources */,
 				FC7C0B241CC109440064776A /* MapInfoView.m in Sources */,
 				FCB6CC581CC13B0400A3D1D3 /* ListCell.m in Sources */,
 				FC7C0B111CC108FC0064776A /* PageModuleManager.m in Sources */,
@@ -455,14 +485,17 @@
 				FC7C0ADD1CC108470064776A /* main.m in Sources */,
 				FC7C0B211CC109440064776A /* BaseInfoView.m in Sources */,
 				FC7C0B231CC109440064776A /* ListInfoView.m in Sources */,
+				FCB75CDC1CC4DAF6001B3F20 /* DetailCreateCtrl.m in Sources */,
 				FC3B36281CC4B9450089917F /* UIImage+Addition.m in Sources */,
 				FC7C0B131CC108FC0064776A /* HomeContainerCtrl.m in Sources */,
+				FCB75CEA1CC4DD10001B3F20 /* DetailAnimator.m in Sources */,
 				FC7C0B141CC108FC0064776A /* ListCtrl.m in Sources */,
 				FC6595AD1CC4C2430010BD58 /* RoomDetailCell.m in Sources */,
 				FC7C0B221CC109440064776A /* DetailInfoView.m in Sources */,
 				FC60CDE91CC1D7A600C78A35 /* BaseViewCtrl.m in Sources */,
 				FC7C0B121CC108FC0064776A /* DetailCtrl.m in Sources */,
 				FC7C0B151CC108FC0064776A /* MapCtrl.m in Sources */,
+				FC5C71FB1CC5E0D100894713 /* DetailPresentationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,8 +616,8 @@
 			baseConfigurationReference = 198BA0A2049480127B3FF698 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: hong zhang (K63V7ZKTMG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: hong zhang (K63V7ZKTMG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hong Zhang (23H5JCMAZ2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hong Zhang (23H5JCMAZ2)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Estimation/PrefixHeader.pch";
 				INFOPLIST_FILE = Estimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -601,8 +634,8 @@
 			baseConfigurationReference = 4E72A85760A9903CF85D1593 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: hong zhang (K63V7ZKTMG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: hong zhang (K63V7ZKTMG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hong Zhang (23H5JCMAZ2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hong Zhang (23H5JCMAZ2)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Estimation/PrefixHeader.pch";
 				INFOPLIST_FILE = Estimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -618,6 +651,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -629,6 +664,7 @@
 				INFOPLIST_FILE = EstimationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Estimation.app/Estimation";
 			};
 			name = Debug;
@@ -637,6 +673,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -644,6 +682,7 @@
 				INFOPLIST_FILE = EstimationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Estimation.app/Estimation";
 			};
 			name = Release;
