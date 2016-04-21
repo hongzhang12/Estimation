@@ -11,6 +11,8 @@
 #import "MapAnnotationView.h"
 #import "DetailCtrl.h"
 
+static NSString *const MapApiKey = @"159a71e2891356a60cec359c9f5aa996";
+
 @interface MapCtrl ()<MAMapViewDelegate>
 
 @property (nonatomic ,weak) MAMapView *mapView;

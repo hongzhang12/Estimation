@@ -12,10 +12,6 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <FLKAutoLayout/UIView+FLKAutoLayout.h>
 #import "BaseViewCtrl.h"
-
-#define RGBColor(r ,g ,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0f]
-#define RandomColor [UIColor colorWithRed:arc4random()%256/255.0 green:arc4random()%256/255.0 blue:arc4random()%256/255.0 alpha:1.0f]
-
-static NSString *const MapApiKey = @"159a71e2891356a60cec359c9f5aa996";
+#import "Constant.h"
 
 #endif /* PrefixHeader_pch */

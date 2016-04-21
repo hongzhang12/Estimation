@@ -32,18 +32,6 @@
 
     [containerView layoutIfNeeded];
     
-//    [UIView animateWithDuration:kDetailTransitionDuration delay:0 usingSpringWithDamping:0.75 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
-//        
-//        left.constant = -kDetailSliderWith;
-//        
-//        // 这句必须用containerView调
-//        [containerView layoutIfNeeded];
-//        
-//    } completion:^(BOOL finished) {
-//        
-//        [transitionContext completeTransition:finished];
-//    }];
-    
     [UIView animateWithDuration:kDetailTransitionDuration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         
         left.constant = -kDetailSliderWith;
@@ -82,18 +70,6 @@
             break;
         }
     }
-    
-//    [UIView animateWithDuration:kDetailTransitionDuration delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:1 options:UIViewAnimationOptionCurveLinear animations:^{
-//        
-//        constraint.constant = 0;
-//        // 这句必须用containerView调
-//        [containerView layoutIfNeeded];
-//    } completion:^(BOOL finished) {
-//        
-//        [fromView removeFromSuperview];
-//        [transitionContext completeTransition:finished];
-//
-//    }];
     
     [UIView animateWithDuration:kDetailTransitionDuration animations:^{
         

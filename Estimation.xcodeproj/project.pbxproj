@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7EFC4D210A41E332C4AD281D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B952BF1297392A76267C2519 /* libPods.a */; };
 		FC12B89A1CC3BD1600C474F7 /* MapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC12B8991CC3BD1600C474F7 /* MapAnnotationView.m */; };
+		FC3766851CC7237C00B76DD9 /* Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3766841CC7237C00B76DD9 /* Networking.m */; };
 		FC3B36281CC4B9450089917F /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3B36271CC4B9450089917F /* UIImage+Addition.m */; };
 		FC5C71FB1CC5E0D100894713 /* DetailPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C71FA1CC5E0D100894713 /* DetailPresentationController.m */; };
 		FC60CDE91CC1D7A600C78A35 /* BaseViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = FC60CDE81CC1D7A600C78A35 /* BaseViewCtrl.m */; };
@@ -31,6 +32,7 @@
 		FCB75CD91CC4DAD6001B3F20 /* DetailEditCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB75CD81CC4DAD6001B3F20 /* DetailEditCtrl.m */; };
 		FCB75CDC1CC4DAF6001B3F20 /* DetailCreateCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB75CDB1CC4DAF6001B3F20 /* DetailCreateCtrl.m */; };
 		FCB75CEA1CC4DD10001B3F20 /* DetailAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB75CE91CC4DD10001B3F20 /* DetailAnimator.m */; };
+		FCCF9B341CC8B35200CFA2D4 /* RequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCF9B331CC8B35200CFA2D4 /* RequestFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		B952BF1297392A76267C2519 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC12B8981CC3BD1600C474F7 /* MapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotationView.h; sourceTree = "<group>"; };
 		FC12B8991CC3BD1600C474F7 /* MapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotationView.m; sourceTree = "<group>"; };
+		FC35D1971CC8821100817399 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		FC3766831CC7237C00B76DD9 /* Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
+		FC3766841CC7237C00B76DD9 /* Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Networking.m; sourceTree = "<group>"; };
 		FC3B36261CC4B9450089917F /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
 		FC3B36271CC4B9450089917F /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
 		FC5C71F91CC5E0D100894713 /* DetailPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPresentationController.h; sourceTree = "<group>"; };
@@ -94,6 +99,8 @@
 		FCB75CDB1CC4DAF6001B3F20 /* DetailCreateCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCreateCtrl.m; sourceTree = "<group>"; };
 		FCB75CE81CC4DD10001B3F20 /* DetailAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailAnimator.h; sourceTree = "<group>"; };
 		FCB75CE91CC4DD10001B3F20 /* DetailAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailAnimator.m; sourceTree = "<group>"; };
+		FCCF9B321CC8B35200CFA2D4 /* RequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestFactory.h; sourceTree = "<group>"; };
+		FCCF9B331CC8B35200CFA2D4 /* RequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +149,17 @@
 			path = MapCalloutView;
 			sourceTree = "<group>";
 		};
+		FC1855161CC6350A0090D2A6 /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				FC3766831CC7237C00B76DD9 /* Networking.h */,
+				FC3766841CC7237C00B76DD9 /* Networking.m */,
+				FCCF9B321CC8B35200CFA2D4 /* RequestFactory.h */,
+				FCCF9B331CC8B35200CFA2D4 /* RequestFactory.m */,
+			);
+			path = NetWorking;
+			sourceTree = "<group>";
+		};
 		FC3B36251CC4B9260089917F /* Helper+Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +201,7 @@
 		FC7C0AD91CC108470064776A /* Estimation */ = {
 			isa = PBXGroup;
 			children = (
+				FC1855161CC6350A0090D2A6 /* NetWorking */,
 				FCB75CE11CC4DC26001B3F20 /* Transition:animation */,
 				FC3B36251CC4B9260089917F /* Helper+Category */,
 				FC7C0B251CC1098B0064776A /* Other */,
@@ -222,6 +241,7 @@
 		FC7C0B001CC108FC0064776A /* App */ = {
 			isa = PBXGroup;
 			children = (
+				FC35D1971CC8821100817399 /* Constant.h */,
 				FC7C0B011CC108FC0064776A /* AppDelegate.h */,
 				FC7C0B021CC108FC0064776A /* AppDelegate.m */,
 				FC7C0B031CC108FC0064776A /* PageModuleManager.h */,
@@ -486,6 +506,7 @@
 				FC7C0B211CC109440064776A /* BaseInfoView.m in Sources */,
 				FC7C0B231CC109440064776A /* ListInfoView.m in Sources */,
 				FCB75CDC1CC4DAF6001B3F20 /* DetailCreateCtrl.m in Sources */,
+				FCCF9B341CC8B35200CFA2D4 /* RequestFactory.m in Sources */,
 				FC3B36281CC4B9450089917F /* UIImage+Addition.m in Sources */,
 				FC7C0B131CC108FC0064776A /* HomeContainerCtrl.m in Sources */,
 				FCB75CEA1CC4DD10001B3F20 /* DetailAnimator.m in Sources */,
@@ -493,6 +514,7 @@
 				FC6595AD1CC4C2430010BD58 /* RoomDetailCell.m in Sources */,
 				FC7C0B221CC109440064776A /* DetailInfoView.m in Sources */,
 				FC60CDE91CC1D7A600C78A35 /* BaseViewCtrl.m in Sources */,
+				FC3766851CC7237C00B76DD9 /* Networking.m in Sources */,
 				FC7C0B121CC108FC0064776A /* DetailCtrl.m in Sources */,
 				FC7C0B151CC108FC0064776A /* MapCtrl.m in Sources */,
 				FC5C71FB1CC5E0D100894713 /* DetailPresentationController.m in Sources */,
