@@ -1,4 +1,4 @@
-//
+   //
 //  ListCtrl.m
 //  EstimationDemo
 //
@@ -9,7 +9,7 @@
 #import "ListCtrl.h"
 #import "ListCell.h"
 #import "DetailCtrl.h"
-
+#import "Networking+User.h"
 @interface ListCtrl ()<UITableViewDelegate ,UITableViewDataSource>
 
 @end
@@ -21,6 +21,14 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = RandomColor;
+    
+    [Networking getServiceAgentsWithEmail:@"1591320313@qq.com" success:^(id responseObject) {
+        
+        NSLog(@"");
+    } failure:^(NSError *error) {
+        
+        NSLog(@"");
+    }];
 }
 
 - (void)setUpView{

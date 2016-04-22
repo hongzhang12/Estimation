@@ -14,6 +14,8 @@
 
 @interface Networking(Private)
 
++ (Networking *)shareNetworking;
+
 - (NSURLSessionTask *)performRequestWithRawRet:(NSURLRequest *)request success:(void (^)(NSData *data))success failure:(void (^)(NSError                    *error))failure;
 
 - (NSURLSessionTask *)performRequestWithJson:(NSURLRequest *)request success:(void (^)(id json))success failure:(void (^)(NSError *error))failure;

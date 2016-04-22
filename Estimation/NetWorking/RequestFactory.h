@@ -14,4 +14,6 @@
 
 + (void)setAccessToken:(NSString *)accessToken;
 
++ (NSMutableURLRequest *)serviceAgentsRequestWithEmail:(NSString *)email;
+
 @end

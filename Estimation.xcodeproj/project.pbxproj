@@ -28,6 +28,7 @@
 		FC7C0B221CC109440064776A /* DetailInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7C0B1C1CC109440064776A /* DetailInfoView.m */; };
 		FC7C0B231CC109440064776A /* ListInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7C0B1E1CC109440064776A /* ListInfoView.m */; };
 		FC7C0B241CC109440064776A /* MapInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7C0B201CC109440064776A /* MapInfoView.m */; };
+		FCA55C771CC9D14300E275DD /* Networking+User.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA55C761CC9D14300E275DD /* Networking+User.m */; };
 		FCB6CC581CC13B0400A3D1D3 /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6CC571CC13B0400A3D1D3 /* ListCell.m */; };
 		FCB75CD91CC4DAD6001B3F20 /* DetailEditCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB75CD81CC4DAD6001B3F20 /* DetailEditCtrl.m */; };
 		FCB75CDC1CC4DAF6001B3F20 /* DetailCreateCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB75CDB1CC4DAF6001B3F20 /* DetailCreateCtrl.m */; };
@@ -91,6 +92,8 @@
 		FC7C0B1F1CC109440064776A /* MapInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapInfoView.h; sourceTree = "<group>"; };
 		FC7C0B201CC109440064776A /* MapInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapInfoView.m; sourceTree = "<group>"; };
 		FC7C0B261CC109AA0064776A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FCA55C751CC9D14300E275DD /* Networking+User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Networking+User.h"; sourceTree = "<group>"; };
+		FCA55C761CC9D14300E275DD /* Networking+User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Networking+User.m"; sourceTree = "<group>"; };
 		FCB6CC561CC13B0400A3D1D3 /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCell.h; sourceTree = "<group>"; };
 		FCB6CC571CC13B0400A3D1D3 /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCell.m; sourceTree = "<group>"; };
 		FCB75CD71CC4DAD6001B3F20 /* DetailEditCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailEditCtrl.h; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 		FC1855161CC6350A0090D2A6 /* NetWorking */ = {
 			isa = PBXGroup;
 			children = (
+				FCA55C741CC9D13400E275DD /* Modules */,
 				FC3766831CC7237C00B76DD9 /* Networking.h */,
 				FC3766841CC7237C00B76DD9 /* Networking.m */,
 				FCCF9B321CC8B35200CFA2D4 /* RequestFactory.h */,
@@ -333,6 +337,15 @@
 			name = Other;
 			sourceTree = "<group>";
 		};
+		FCA55C741CC9D13400E275DD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FCA55C751CC9D14300E275DD /* Networking+User.h */,
+				FCA55C761CC9D14300E275DD /* Networking+User.m */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		FCB75CE11CC4DC26001B3F20 /* Transition:animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +515,7 @@
 				FC7C0B111CC108FC0064776A /* PageModuleManager.m in Sources */,
 				FC7C0B101CC108FC0064776A /* AppDelegate.m in Sources */,
 				FC12B89A1CC3BD1600C474F7 /* MapAnnotationView.m in Sources */,
+				FCA55C771CC9D14300E275DD /* Networking+User.m in Sources */,
 				FC7C0ADD1CC108470064776A /* main.m in Sources */,
 				FC7C0B211CC109440064776A /* BaseInfoView.m in Sources */,
 				FC7C0B231CC109440064776A /* ListInfoView.m in Sources */,
@@ -644,10 +658,10 @@
 				INFOPLIST_FILE = Estimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zhanghong.AdHoc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlight.mobile.ios.saas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -662,10 +676,10 @@
 				INFOPLIST_FILE = Estimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zhanghong.AdHoc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlight.mobile.ios.saas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

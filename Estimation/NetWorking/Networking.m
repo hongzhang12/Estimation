@@ -11,16 +11,17 @@
 
 typedef NS_ENUM(NSInteger, HttpResponseStatusType) {
     
-    HttpResponseStatusDefault = 0,
-    HttpResponseStatusSuccess = 2,
+    HttpResponseStatusDefault     = 0,
+    HttpResponseStatusSuccess     = 2,
     HttpResponseStatusClientError = 4,
     HttpResponseStatusServerError = 5,
 };
 
-static NSString *const kClientError = @"kClientError";
-static NSString *const kServerError = @"kServerError";
+static NSString *const kClientError     = @"kClientError";
+static NSString *const kServerError     = @"kServerError";
 static NSString *const kNetworkingError = @"kNetworkingError";
-static NSString *const kParserError = @"kParserError";
+static NSString *const kParserError     = @"kParserError";
+
 
 @interface Networking()
 
@@ -40,7 +41,7 @@ static NSString *const kParserError = @"kParserError";
         
         NSURLSessionConfiguration *conf = [NSURLSessionConfiguration defaultSessionConfiguration];
         conf.timeoutIntervalForRequest = 30;
-        _shareNetworking.httpSession = [[NSURLSession alloc] init];
+        _shareNetworking.httpSession = [NSURLSession sessionWithConfiguration:conf];
     });
     
     return _shareNetworking;
